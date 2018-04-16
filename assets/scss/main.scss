@@ -1,0 +1,20 @@
+$main-accent-color: #25bdad;
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  background-color: #000;
+}
+
+@import './_icons.scss';
+@import './partials/_header.scss';
+@import './partials/_about.scss';
+@import './partials/_services.scss';
+@import './partials/_team.scss';
+@import './partials/_background.scss';
+@import './partials/_press.scss';
+@import './partials/_blog.scss';
+@import './partials/_partnerships.scss';
+@import './partials/_contact.scss';
+@import './partials/_footer.scss';

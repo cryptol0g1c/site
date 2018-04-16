@@ -1,0 +1,143 @@
+/** 
+ * Header
+ */
+.site-header {
+  background: transparent url(../img/header-bg.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+
+  h1 {
+    color: $main-accent-color;
+    font-weight: 300;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  h3 {
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .currencies {
+    display: inline-block;
+    color: $main-accent-color;
+    font-size: 1rem;
+    line-height: 1;
+    vertical-align: middle;
+    border-left: 1px solid #7c7f81;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+
+  .navbar-nav {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    width: 100%;
+    background-color: transparent !important;
+
+    .main-navbar-nav {
+      @media (min-width: 992px) {
+        display: flex;
+        margin-left: 5rem;
+      }
+    }
+
+    .language-selector {
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+
+      @media (min-width: 1200px) {
+        margin-left: 5rem;
+      }
+      @media (max-width: 1200px) {
+        margin-top: 2rem;
+      }
+
+      li {
+        @media (min-width: 1200px) {
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+      }
+    }
+
+    a {
+      color: #fff !important;
+      font-weight: 600;
+
+      &.nav-link {
+        @media (min-width: 1200px) {
+          margin: 0 1rem;
+        }
+      }
+
+      &.nav-link-lang {
+        font-size: 0.75rem;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &.active {
+          background-color: #fff;
+          color: #000 !important;
+        }
+      }
+    }
+  }
+
+  .hero {
+    padding: 10rem 0 14rem;
+    position: relative;
+
+    .scroll-down {
+      position: absolute;
+      bottom: 2rem;
+      color: #fff;
+      text-decoration: none;
+      animation-name: levitate;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+    }
+  }
+}
+
+@keyframes levitate {
+  0% { transform: translateY(-15px); }
+  60% { transform: translateY(15px); opacity: 0; }
+  100% { transform: translateY(15px); opacity: 0; }
+}
+
+.carousel-inner {
+  padding-bottom: 3rem;
+  
+  .carousel-indicators {
+    bottom: -15px;
+  
+    li {
+      width: 12px;
+      height: 12px;
+      background-color: #c8d9e1;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  
+    .active {
+      background-color: $main-accent-color;
+    }
+  }
+}

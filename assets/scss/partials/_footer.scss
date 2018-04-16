@@ -1,0 +1,24 @@
+/**
+ * Site footer
+ */
+.site-footer {
+  padding: 1rem;
+  margin-top: 3rem;
+  background: #0b0f14;
+  color: #27323f;
+
+  b {
+    font-weight: 600;
+  }
+
+  a {
+    color: #27323f;
+    font-weight: 600;
+    margin: 0.5rem;
+
+    &:hover {
+      text-decoration: none;
+      color: #38495d;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+/**
+ * Our services
+ */
+.our-services {
+  background-color: #e3f4f3;
+  padding: 4rem 0;
+
+  header {
+    text-align: center;
+
+    h1 {
+      color: $main-accent-color;
+      font-size: 3.3rem;
+
+      b {
+        font-weight: 600;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: #071124;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .platform {
+    position: relative;
+    text-align: center;
+    align-self: center;
+
+    .platform-icon {
+      position: absolute;
+      display: none;
+
+      &.icon-money {
+        top: 145px;
+        left: 175px;
+      }
+
+      &.icon-lock {
+        top: 230px;
+        left: 240px;
+      }
+
+      &.icon-tablet {
+        top: -65px;
+        left: 325px;
+      }
+
+      &.icon-envelope {
+        top: 30px;
+        left: 210px;
+      }
+
+      &.icon-cloud {
+        top: 30px;
+        left: 310px;
+      }
+
+      &.icon-shield {
+        top: 90px;
+        left: 255px;
+      }
+    }
+  }
+
+  .list-group {
+    height: 100%;
+    justify-content: space-evenly;
+
+    .list-group-item {
+      background-color: transparent;
+      border: 0;
+
+      h5 {
+        color: #071124;
+        font-weight: 300;
+      }
+
+      p {
+        color: #7a7c80;
+        font-size: 0.85rem;
+        line-height: 1.3;
+        font-weight: 400;
+      }
+    }
+  }
+
+  footer {
+    margin-top: 3rem;
+
+    h2 {
+      color: $main-accent-color;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: #7a7c80;
+      font-weight: 400;
+      font-size: 1.05rem;
+    }
+  }
+}

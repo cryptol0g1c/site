@@ -1,0 +1,72 @@
+/**
+ * Our team
+ */
+.our-team {
+  background-color: #0c1116;
+  text-align: center;
+  padding: 4rem 0;
+
+  header {
+    h1 {
+      color: $main-accent-color;
+      font-size: 3.3rem;
+      font-weight: 300;
+      margin-bottom: 0;
+
+      b {
+        font-weight: 600;
+      }
+    }
+
+    p {
+      color: #e2eef4;
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .team-member {
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: 1rem;
+    }
+
+    a {
+      color: $main-accent-color;
+      text-decoration: none;
+    }
+    
+    h2 {
+      color: $main-accent-color;
+      font-weight: 300;
+      font-size: 1.8rem;
+    }
+
+    img + p {
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      color: #e2eef4;
+      font-size: 1.1rem;
+    }
+  }
+
+  footer {
+    h1 {
+      color: $main-accent-color;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.45rem;
+      color: #e2eef4;
+    }
+
+    a {
+      color: $main-accent-color;
+      font-weight: 600;
+    }
+  }
+}
